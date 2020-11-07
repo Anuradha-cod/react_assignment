@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "publishDate": "2020-09-14T14:51:51.089+00:00",
+      "title": "How can we sing about love?",
+      "imageUrl": "https://milo.bootlab.io/img/articles/22.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    },
+    {
+      "id": 2,
+      "publishDate": "2020-08-14T14:51:51.089+00:00",
+      "title": "Oh, I guess they have the blues",
+      "imageUrl": "https://milo.bootlab.io/img/articles/18.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    },
+    {
+      "id": 3,
+      "publishDate": "2020-07-14T14:51:51.089+00:00",
+      "title": "How can we, how can we sing about ourselves?",
+      "imageUrl": "https://milo.bootlab.io/img/articles/12.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    },
+    {
+      "id": 4,
+      "publishDate": "2020-06-14T14:51:51.089+00:00",
+      "title": "The king is made of paper",
+      "imageUrl": "https://milo.bootlab.io/img/articles/5.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    },
+    {
+      "id": 5,
+      "publishDate": "2020-06-14T14:51:51.089+00:00",
+      "title": "Crying on the news",
+      "imageUrl": "https://milo.bootlab.io/img/articles/13.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    },
+    {
+      "id": 6,
+      "publishDate": "2019-08-14T14:51:51.089+00:00",
+      "title": "How can you not sing about love?",
+      "imageUrl": "https://milo.bootlab.io/img/articles/1.jpg",
+      "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+    }
+  ]
+  
