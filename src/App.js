@@ -64,14 +64,25 @@ updatStatus = e => {
   })
 }
 
+onAdd = e => {
+  // e.stopPropagation();
+  e.preventDefault();
+  this.setState( { data: [{title: this.state.name}, ...this.state.data] })
+}
+onChange = e =>{
+  this.setState( {name: e.target.value});
+
+}
+
+
 render () {
   console.log("RENDER");
   console.log(this.state.data);
   return ( 
     <div className="App my-list">
       <h1>ToDo App</h1>
-      <input></input>
-<button>ADD</button>
+      <input onChange={(e) => this.onChange(e)} value={this.state.name}></input>
+     <button onClick={(e) => this.onAdd(e)}>ADD</button>
       {this.state.data && 
       this.state.data.map(e => {
       return <div className={`render ${e.completed == true ? "green":"red"}`} key={e.id}>
