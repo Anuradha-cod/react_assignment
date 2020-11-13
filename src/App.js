@@ -41,15 +41,6 @@ async componentDidMount(){
 //    }
 //  );
 }
-onClick = ele => {
-  console.log(ele);
- let index = this.state.data.map(e=> e.title ).indexOf(ele.title)
-this.setState({data : [
-  ...this.state.data.slice(0, index),
-  ...this.state.data.slice( index +1)
-]
-});
-};
 
 updatStatus = e => {
   let index = this.state.data.map(e=>e.title).indexOf(e.title);
@@ -73,7 +64,11 @@ onChange = e =>{
   this.setState( {name: e.target.value});
 
 }
-
+onSubmit = e => {
+  // e.stopPropagation();
+  e.preventDefault();
+  this.setState( { data: [{title: this.state.name}, ...this.state.data] })
+}
 
 render () {
   console.log("RENDER");
@@ -82,6 +77,7 @@ render () {
     <div className="App my-list">
       <h1>ToDo App</h1>
       <input onChange={(e) => this.onChange(e)} value={this.state.name}></input>
+      <input onSubmit={(e) => this.onSubmit(e)} value={this.state.submit}></input>
      <button onClick={(e) => this.onAdd(e)}>ADD</button>
       {this.state.data && 
       this.state.data.map(e => {
@@ -91,6 +87,7 @@ render () {
         <span>
         <span> <button onClick={() => this.onClick(e)}>Del</button></span>
         <span><button onClick={() => this.updatStatus(e)}>Done</button></span>
+        {/* <span><input type="submit" value="submit" onClick={()=>handleSubmit()}/></span> */}
         </span>
         </div>;
       })}
